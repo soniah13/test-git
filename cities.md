@@ -1,0 +1,2 @@
+Nairobi
+Kisumu
