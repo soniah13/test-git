@@ -1,0 +1,17 @@
+name: Test Workflow for CICD
+
+on: [ "push", "pull_request"]
+
+jobs: 
+    build:
+        runs-on : ubuntu-latest
+
+        steps: 
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: List files
+              run: ls
+
+            - name: Show cities
+              run: cat cities.md
